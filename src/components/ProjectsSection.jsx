@@ -4,11 +4,11 @@ const projects = [
     {
         id: 1,
         title: "HarmonAI",
-        description: "A Hackathon winner AI vocal coach. Analyzes users voice and generates a detailed report on how to improve. Created with Vue, Express, and Google Gemini API.",
+        description: "A Hackathon winner AI vocal coach. Analyzes users voice and generates a detailed report on how to improve. Created with Vue, Node.js, Express, and Google Gemini API.",
         image: "/projects/Hackathon_winner.jpg",
-        tags: ["Vue", "Express"],
-        demoUrl: "#",
-        githubUrl: "#",
+        tags: ["Vue", "Node.js", "Express"],
+        demoUrl: "https://devpost.com/software/harmonai-8hybqu",
+        githubUrl: "https://github.com/CHamilton02/harmonai-vocal-coach",
 
     },
 
@@ -18,8 +18,8 @@ const projects = [
         title: "My Chickens!",
         description: "A small interactive game that simulates playing a gameboy. Compatible with PC and mobile. Game is developed in C and GB Studio.",
         image: "/projects/My_Chickens.jpg",
-        tags: ["C", "GBStudio"],
-        demoUrl: "#",
+        tags: ["GBStudio", "Unity"],
+        demoUrl: "https://anreydelacruzgmailcom.itch.io/my-chickens",
         githubUrl: "#",
     },
 
@@ -29,7 +29,7 @@ const projects = [
         title: "AI Arduino Guitar Tuner",
         description: "A guitar tuner made with an arduino and servo motors to tune a guitar. Uses Google Gemini API to customize and change string tuning.",
         image: "/projects/HarmonAI_Landing.jpg",
-        tags: ["C", "Arduino"],
+        tags: ["Arduino", "Embedded Systems"],
         demoUrl: "#",
         githubUrl: "#",
      },
