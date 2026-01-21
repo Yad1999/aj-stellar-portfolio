@@ -37,6 +37,7 @@ const skills = [
     {name: "SQL", level: 90, category: "languages"},
     {name: "C", level: 75, category: "languages"},
     {name: "C#", level: 85, category: "languages"},
+    {name: "XML", level: 75, category: "languages"},
 ];
 
 const categories = ["all", "frontend", "backend", "tools", "languages"];
