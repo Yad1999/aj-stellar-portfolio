@@ -16,7 +16,7 @@ const projects = [
         // Add 2nd project
         id: 2,
         title: "My Chickens!",
-        description: "A small interactive game that simulates playing a gameboy. Compatible with PC and mobile. Game is developed in C and GB Studio.",
+        description: "A small interactive game that simulates playing a gameboy. Compatible with PC and mobile. Game is developed in Unity and GB Studio.",
         image: "/projects/My_Chickens.jpg",
         tags: ["GBStudio", "Unity"],
         demoUrl: "https://anreydelacruzgmailcom.itch.io/my-chickens",
