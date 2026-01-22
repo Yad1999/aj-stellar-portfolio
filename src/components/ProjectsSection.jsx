@@ -20,7 +20,7 @@ const projects = [
         image: "/projects/My_Chickens.jpg",
         tags: ["GBStudio", "Unity"],
         demoUrl: "https://anreydelacruzgmailcom.itch.io/my-chickens",
-        githubUrl: "#",
+        githubUrl: "https://github.com/Yad1999/my-chickens.git",
     },
 
      {
