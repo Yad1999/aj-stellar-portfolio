@@ -15,9 +15,9 @@ export const HeroSection = () => {
                     </h1>
 
                     <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-4">
-                        I create stellar web experiences with modern technologies.
-                        Specializing in front-end development, I build interfaces that are
-                        both beautiful and functional.
+                        A 3rd-year Computer Science student at York University.
+                        I am a creatively driven person with hands-on experience completing a variety of projects
+                        involving Full-Stack Development, UX/UI design, Game Development, Embedded Systems, SDLC and Cloud deployment.
                     </p>
 
                     <div className="pt-4 opacity-0 animate-fade-in-delay-4">

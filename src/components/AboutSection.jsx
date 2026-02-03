@@ -1,4 +1,4 @@
-import { Briefcase, Code, User } from "lucide-react";
+import { Briefcase, Code, User, Cog } from "lucide-react";
 
 
 export const AboutSection = () => {
@@ -62,7 +62,7 @@ export const AboutSection = () => {
                                     <User className="h-6 w-6 text-primary"/>
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="font-text-semibold text-lg">UI/UX Design</h4>
+                                    <h4 className="font-text-semibold text-lg">UX/UI Design</h4>
                                     <p className="text-muted-foreground">
                                         Designing intuitive user interfaces and seamless user
                                         experiences.
@@ -74,10 +74,10 @@ export const AboutSection = () => {
                         <div className="gradient-border p-6 card-hover">
                             <div className="flex items-start gap-4">
                                 <div className="p-3 rounded-full bg-primary/10">
-                                    <Briefcase className="h-6 w-6 text-primary"/>
+                                    <Cog className="h-6 w-6 text-primary"/>
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="font-text-semibold text-lg">Project Management</h4>
+                                    <h4 className="font-text-semibold text-lg">Embedded Systems</h4>
                                     <p className="text-muted-foreground">
                                         Leading projects from conception to completion with agile
                                         methodologies.
