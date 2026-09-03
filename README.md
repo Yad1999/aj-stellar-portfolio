@@ -47,7 +47,7 @@ The project relies on a custom design system implemented in `src/index.css`.
 
 ### Theming (Light/Dark Mode)
 
-We use CSS variables for dynamic theming.
+Uses CSS variables for dynamic theming.
 - **Light Mode (Default)**: 
   - Background: `hsl(210 40% 98%)` (Very light grayish-blue)
   - Foreground: `hsl(222 47% 11%)`
@@ -71,14 +71,13 @@ The `index.css` file provides custom Tailwind utilities to enforce the "Stellar"
 - `fade-in`: Delay-based entry animations for staggered rendering.
 - `meteor`: Diagonal translation for shooting stars.
 
-## Goal: Update Light Mode Background Design
-
-> **Note for AI Agent**: The primary goal right now is to update the **Light Mode Background** of the portfolio website. 
+## Next Goal: Update Light Mode Background Design
+The primary goal right now is to update the **Light Mode Background** of the portfolio website. 
 
 Currently, the light mode background is a flat `hsl(210 40% 98%)`. We want to make it dynamic, vibrant, and visually stunning while keeping the stellar/space theme alive. The dark mode uses `StarBackground.jsx` effectively, but the light mode needs a rethink to feel equally premium without losing contrast or readability. 
 
 **Requirements for the redesign**:
-1. Implement rich aesthetics, potentially using smooth gradients, glassmorphism, and micro-animations.
+1. Implement rich aesthetics, potentially using smooth gradients and micro-animations.
 2. The design must be responsive and maintain high contrast for the foreground text.
 3. Keep the styling confined to Tailwind utility classes or custom variables in `src/index.css`.
 4. The background should feel alive (e.g., subtle interactive effects or CSS animations).
