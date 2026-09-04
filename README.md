@@ -1,5 +1,4 @@
-# AJ Stellar Portfolio Website
-## [It's Deployed Here!](https://aj-stellar-portfolio.vercel.app/)
+# [AJ Stellar Portfolio Website] (https://aj-stellar-portfolio.vercel.app/)
 ## Overview
 
 This is a modern, responsive portfolio website built with React, Vite, and Tailwind CSS. It features a space/stellar theme with custom animations and theming support (Light/Dark mode). The project uses a component-based architecture for maintainability and scalability.
