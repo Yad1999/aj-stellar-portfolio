@@ -71,13 +71,9 @@ The `index.css` file provides custom Tailwind utilities to enforce the "Stellar"
 - `fade-in`: Delay-based entry animations for staggered rendering.
 - `meteor`: Diagonal translation for shooting stars.
 
-## Next Goal: Update Light Mode Background Design
-The primary goal right now is to update the **Light Mode Background** of the portfolio website. 
+## Recent Updates
 
-Currently, the light mode background is a flat `hsl(210 40% 98%)`. We want to make it dynamic, vibrant, and visually stunning while keeping the stellar/space theme alive. The dark mode uses `StarBackground.jsx` effectively, but the light mode needs a rethink to feel equally premium without losing contrast or readability. 
-
-**Requirements for the redesign**:
-1. Implement rich aesthetics, potentially using smooth gradients and micro-animations.
-2. The design must be responsive and maintain high contrast for the foreground text.
-3. Keep the styling confined to Tailwind utility classes or custom variables in `src/index.css`.
-4. The background should feel alive (e.g., subtle interactive effects or CSS animations).
+- **Dynamic Light Mode**: Replaced the static light mode with a vibrant, animated "Sky and Clouds" aesthetic, complete with massive, slowly drifting clouds (`CloudBackground.jsx`).
+- **Frosted Glass Cards**: Upgraded the light mode cards to use a premium Glassmorphism effect (`backdrop-blur`) that allows the sky gradient to shine through.
+- **Color Contrast Overhaul**: Switched the primary branding to a high-contrast Yellow (`#FFDB00`) for light mode, and updated typography to pure white and crisp light gray for maximum legibility against the sky.
+- **Isolated Theming**: Configured `.light-only` and `.dark-only` utility classes to flawlessly transition between the deep space dark mode and the airy sky light mode without styling overlap.

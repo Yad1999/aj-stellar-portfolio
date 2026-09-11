@@ -1,5 +1,6 @@
 import { ThemeToggle } from "../components/ThemeToggle"
 import { StarBackground } from "@/components/StarBackground"
+import { CloudBackground } from "@/components/CloudBackground"
 import { NavBar } from "@/components/NavBar"
 import { HeroSection } from "../components/HeroSection"
 import { AboutSection } from "../components/AboutSection"
@@ -15,7 +16,12 @@ export const Home = () => {
             {/* Theme Toggle */}
             <ThemeToggle />
             {/* Background Effects*/}
-            <StarBackground />
+            <div className="dark-only">
+                <StarBackground />
+            </div>
+            <div className="light-only">
+                <CloudBackground />
+            </div>
             {/* Navbar */}
             <NavBar />
             {/* Main Content */}

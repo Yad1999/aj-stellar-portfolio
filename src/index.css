@@ -9,6 +9,8 @@
   --color-primary-foreground: hsl(var(--primary-foreground));
 
   --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-muted-foreground: hsl(var(--muted-foreground));
 
   --animate-float: float 6s ease-in-out infinite;
   --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;
@@ -18,6 +20,7 @@
   --animate-fade-in-delay-3: fade-in 0.7s ease-in-out 0.6s forwards;
   --animate-fade-in-delay-4: fade-in 0.7s ease-in-out 0.8s forwards;
   --animate-meteor: meteor 5s linear infinite;
+  --animate-move-cloud: move-cloud linear infinite;
 
   @keyframes float {
     0% , 100% {
@@ -62,17 +65,28 @@
       opacity: 0%;
     }
   }
+
+  @keyframes move-cloud {
+    from {
+      transform: translateX(-200px);
+    }
+    to {
+      transform: translateX(120vw);
+    }
+  }
 }
 
 @layer base {
   :root {
     --background: 210 40% 98%;
-    --foreground: 222 47% 11%;
+    --foreground: 0 0% 100%;
+    --card-foreground: 0 0% 100%;
+    --muted-foreground: 215 20% 90%;
 
-    --card: 0 0% 100%;
+    --card: 210 40% 98%;
 
-    --primary: 250 47% 60%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 51.5 100% 50%;
+    --primary-foreground: 222 47% 11%;
 
     --border: 214 32% 91%;
   }
@@ -80,6 +94,8 @@
   .dark {
     --background: 222 47% 4%;
     --foreground: 213 31% 91%;
+    --card-foreground: 213 31% 91%;
+    --muted-foreground: 215 20.2% 65.1%;
 
     --card: 222 47% 8%;
 
@@ -88,6 +104,39 @@
 
     --border: 217 33% 20%;
   }
+
+  .bg-card, .gradient-border {
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: hsl(var(--card-foreground));
+    --foreground: var(--card-foreground);
+    --muted-foreground: 215 20% 90%;
+  }
+
+  .dark .bg-card {
+    background-color: hsl(var(--card)) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: none !important;
+    --muted-foreground: 215 20.2% 65.1%;
+  }
+
+  .dark .gradient-border {
+    background: linear-gradient(to right, hsl(var(--card)), hsl(var(--card))) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: 1px solid transparent !important;
+    --muted-foreground: 215 20.2% 65.1%;
+  }
+
+  /* Custom visibility classes for theme toggling */
+  .dark-only { display: none; }
+  .dark .dark-only { display: block; }
+  
+  .light-only { display: block; }
+  .dark .light-only { display: none; }
 
   * {
     @apply border-border;
