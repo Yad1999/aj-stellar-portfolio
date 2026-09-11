@@ -30,7 +30,7 @@ export const CloudBackground = () => {
         for (let i = 0; i < numberOfClouds; i++) {
             newClouds.push({
                 id: i,
-                size: Math.random() * 800 + 600, // Massive clouds (600px to 1400px)
+                size: Math.random() * 70 + 50 + "vw", 
                 delay: Math.random() * -60, // Negative delay to start mid-screen
                 opacity: Math.random() * 0.5 + 0.3,
                 animationDuration: Math.random() * 60 + 40, // Slow movement
@@ -43,8 +43,8 @@ export const CloudBackground = () => {
     return (
         <div className="fixed inset-0 overflow-hidden pointer-events-none z-0 bg-gradient-to-b from-[#1F3C5C] via-[#314C6F] to-[#6384A2]">
             {clouds.map((cloud) => (
-                <div key={cloud.id} className="absolute animate-move-cloud" style={{
-                    width: cloud.size + "px",
+                <div key={cloud.id} className="absolute animate-move-cloud will-change-transform will-change-opacity" style={{
+                    width: cloud.size,
                     bottom: "0px",
                     "--cloud-opacity": cloud.opacity,
                     animationDelay: cloud.delay + "s",
@@ -53,6 +53,8 @@ export const CloudBackground = () => {
                     <img 
                         src={cloud.image} 
                         alt="cloud" 
+                        loading="lazy"
+                        decoding="async"
                         className="w-full h-auto drop-shadow-md"
                     />
                 </div>

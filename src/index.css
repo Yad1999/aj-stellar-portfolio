@@ -68,7 +68,7 @@
 
   @keyframes move-cloud {
     0% {
-      transform: translateX(-1500px);
+      transform: translateX(-100%);
       opacity: 0;
     }
     15% {
@@ -78,7 +78,7 @@
       opacity: var(--cloud-opacity, 0.8);
     }
     100% {
-      transform: translateX(120vw);
+      transform: translateX(100vw);
       opacity: 0;
     }
   }
