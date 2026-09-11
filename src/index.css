@@ -67,11 +67,19 @@
   }
 
   @keyframes move-cloud {
-    from {
-      transform: translateX(-200px);
+    0% {
+      transform: translateX(-1500px);
+      opacity: 0;
     }
-    to {
+    15% {
+      opacity: var(--cloud-opacity, 0.8);
+    }
+    85% {
+      opacity: var(--cloud-opacity, 0.8);
+    }
+    100% {
       transform: translateX(120vw);
+      opacity: 0;
     }
   }
 }

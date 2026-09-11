@@ -72,7 +72,8 @@ The `index.css` file provides custom Tailwind utilities to enforce the "Stellar"
 
 ## Recent Updates
 
-- **Dynamic Light Mode**: Replaced the static light mode with a vibrant, animated "Sky and Clouds" aesthetic, complete with massive, slowly drifting clouds (`CloudBackground.jsx`).
+- **Realistic Sky Aesthetics**: Replaced the static SVG clouds in `CloudBackground.jsx` with 5 high-quality, realistic cloud PNGs. The clouds are now dynamically anchored to the bottom of the viewport, creating a massive, sweeping fog-like effect that smoothly drifts across the screen.
+- **Advanced Animations**: Implemented CSS keyframe optimizations in `index.css` to gracefully fade clouds in and out via dynamic CSS variables, entirely removing abrupt pop-in behavior.
 - **Frosted Glass Cards**: Upgraded the light mode cards to use a premium Glassmorphism effect (`backdrop-blur`) that allows the sky gradient to shine through.
 - **Color Contrast Overhaul**: Switched the primary branding to a high-contrast Yellow (`#FFDB00`) for light mode, and updated typography to pure white and crisp light gray for maximum legibility against the sky.
 - **Isolated Theming**: Configured `.light-only` and `.dark-only` utility classes to flawlessly transition between the deep space dark mode and the airy sky light mode without styling overlap.

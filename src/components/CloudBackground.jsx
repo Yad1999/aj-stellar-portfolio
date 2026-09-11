@@ -1,4 +1,9 @@
 import { useEffect, useState } from "react";
+import cloud1 from "../assets/cloud1.png";
+import cloud2 from "../assets/cloud2.png";
+import cloud3 from "../assets/cloud3.png";
+import cloud4 from "../assets/cloud4.png";
+import cloud5 from "../assets/cloud5.png";
 
 export const CloudBackground = () => {
     const [clouds, setClouds] = useState([]);
@@ -16,21 +21,20 @@ export const CloudBackground = () => {
     }, []);
 
     const generateClouds = () => {
-        // Generate a random 5 to 8 clouds total
+        // Generate a random 4 to 7 clouds total
         const numberOfClouds = Math.floor(Math.random() * 4) + 4;
 
         const newClouds = [];
-        const colors = ["#F9F4E8", "#F4EBDE"];
+        const cloudImages = [cloud1, cloud2, cloud3, cloud4, cloud5];
 
         for (let i = 0; i < numberOfClouds; i++) {
             newClouds.push({
                 id: i,
-                size: Math.random() * 250 + 150, // Massive clouds (150px to 400px)
-                y: Math.random() * 80 + 5,
+                size: Math.random() * 800 + 600, // Massive clouds (600px to 1400px)
                 delay: Math.random() * -60, // Negative delay to start mid-screen
                 opacity: Math.random() * 0.5 + 0.3,
                 animationDuration: Math.random() * 60 + 40, // Slow movement
-                color: colors[Math.floor(Math.random() * colors.length)],
+                image: cloudImages[Math.floor(Math.random() * cloudImages.length)],
             });
         }
         setClouds(newClouds);
@@ -41,16 +45,16 @@ export const CloudBackground = () => {
             {clouds.map((cloud) => (
                 <div key={cloud.id} className="absolute animate-move-cloud" style={{
                     width: cloud.size + "px",
-                    height: cloud.size * 0.7 + "px",
-                    top: cloud.y + "%",
-                    opacity: cloud.opacity,
+                    bottom: "0px",
+                    "--cloud-opacity": cloud.opacity,
                     animationDelay: cloud.delay + "s",
                     animationDuration: cloud.animationDuration + "s",
-                    color: cloud.color,
                 }}>
-                    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="w-full h-full drop-shadow-md">
-                        <path d="M17.5 19C19.9853 19 22 16.9853 22 14.5C22 12.1332 20.1764 10.1917 17.8643 10.0152C17.3828 6.64366 14.4849 4 11 4C7.13401 4 4 7.13401 4 11C4 11.2335 4.01142 11.4644 4.03362 11.6917C2.26127 12.3556 1 14.0366 1 16C1 18.2091 2.79086 20 5 20H17.5Z" />
-                    </svg>
+                    <img 
+                        src={cloud.image} 
+                        alt="cloud" 
+                        className="w-full h-auto drop-shadow-md"
+                    />
                 </div>
             ))}
         </div>
