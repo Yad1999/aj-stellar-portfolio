@@ -6,7 +6,7 @@ const projects = [
         title: "HarmonAI",
         description: "A Hackathon winner AI vocal coach. Analyzes users voice and generates a detailed report on how to improve. Created with Vue, Node.js, Express, and Google Gemini API.",
         image: "/projects/Hackathon_winner.jpg",
-        tags: ["Vue", "Node.js", "Express"],
+        tags: ["Vue", "Node.js", "Express", "Google Gemini API"],
         demoUrl: "https://devpost.com/software/harmonai-8hybqu",
         githubUrl: "https://github.com/CHamilton02/harmonai-vocal-coach",
 
@@ -23,23 +23,23 @@ const projects = [
         githubUrl: "https://github.com/Yad1999/my-chickens.git",
     },
 
-     {
+    {
         // Add 3rd project
         id: 3,
-        title: "AI Arduino Guitar Tuner",
-        description: "A guitar tuner made with an arduino and servo motors to tune a guitar. Uses Google Gemini API to customize and change string tuning.",
-        image: "/projects/HarmonAI_Landing.jpg",
-        tags: ["Arduino", "Embedded Systems"],
-        demoUrl: "#",
-        githubUrl: "#",
-     },
+        title: "BatteriVolt",
+        description: "A Full-Stack e-commerce EV dealership that helps you find the perfect electric vehicle with 24/7 AI assistance and global charging station locator.",
+        image: "/projects/BatteriVolt.png",
+        tags: ["React", "Node.js", "Express", "AWS", "Google Gemini API"],
+        demoUrl: "https://ev-dealership-final.vercel.app/",
+        githubUrl: "https://github.com/Yad1999/ev-dealership-final",
+    },
 ];
 
 export const ProjectsSection = () => {
     return <section id="projects" className="py-24 px-4 relative">
         <div className="container mx-auto max-w-5xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-                 Featured <span className="text-primary"> Projects </span>
+                Featured <span className="text-primary"> Projects </span>
             </h2>
 
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
@@ -49,14 +49,14 @@ export const ProjectsSection = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {projects.map((project, key) => (
-                    <div 
-                        key={key} 
+                    <div
+                        key={key}
                         className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
-                    > 
+                    >
                         <div className="h-48 overflow-hidden">
                             <img
-                                src={project.image} 
-                                alt={project.title} 
+                                src={project.image}
+                                alt={project.title}
                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                             />
                         </div>
@@ -69,26 +69,26 @@ export const ProjectsSection = () => {
                                     </span>
                                 ))}
                             </div>
-                        
+
                             <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
                             <p className="text-muted-foreground text-sm mb-4">
                                 {project.description}
                             </p>
                             <div className="flex justify-between items-center">
                                 <div className="flex space-x-3">
-                                    <a 
+                                    <a
                                         href={project.demoUrl}
-                                        target="_blank" 
+                                        target="_blank"
                                         className="text-foreground/80 hover:text-primary transition-colors duration-300"
                                     >
-                                        <ExternalLink size={20}/>
+                                        <ExternalLink size={20} />
                                     </a>
-                                    <a 
+                                    <a
                                         href={project.githubUrl}
-                                        target="_blank" 
+                                        target="_blank"
                                         className="text-foreground/80 hover:text-primary transition-colors duration-300"
                                     >
-                                        <Github size={20}/>
+                                        <Github size={20} />
                                     </a>
                                 </div>
                             </div>
@@ -98,8 +98,8 @@ export const ProjectsSection = () => {
             </div>
 
             <div className="text-center mt-12">
-                <a 
-                    className="cosmic-button w-fit flex items-center mx-auto gap-2" 
+                <a
+                    className="cosmic-button w-fit flex items-center mx-auto gap-2"
                     target="_blank"
                     href="https://github.com/Yad1999"
                 >
