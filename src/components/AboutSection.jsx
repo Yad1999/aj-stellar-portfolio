@@ -48,10 +48,10 @@ export const AboutSection = () => {
                                     <Code className="h-6 w-6 text-primary" />
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="font-text-semibold text-lg">Web Development</h4>
+                                    <h4 className="font-text-semibold text-lg">Full-Stack Development</h4>
                                     <p className="text-muted-foreground">
-                                        Creating responsive websites and web applications with
-                                        modern frameworks.
+                                        Engineering responsive, accessible full-stack mobile and web applications
+                                        using modern frameworks, cloud architectures, and interactive tooling.
                                     </p>
                                 </div>
                             </div>
@@ -63,10 +63,11 @@ export const AboutSection = () => {
                                     <User className="h-6 w-6 text-primary" />
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="font-text-semibold text-lg">UX/UI Design</h4>
+                                    <h4 className="font-text-semibold text-lg">Agentic AI Tooling & Workflows</h4>
                                     <p className="text-muted-foreground">
-                                        Designing intuitive user interfaces and seamless user
-                                        experiences.
+                                        Leveraging next-generation agentic IDEs, multi-model setups,
+                                        and LLM toolchains (Claude Code, Gemini) to accelerate
+                                        development lifecycles and build intelligent systems.
                                     </p>
                                 </div>
                             </div>
@@ -78,10 +79,11 @@ export const AboutSection = () => {
                                     <Cog className="h-6 w-6 text-primary" />
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="font-text-semibold text-lg">Embedded Systems</h4>
+                                    <h4 className="font-text-semibold text-lg">Experimental & Creative Development</h4>
                                     <p className="text-muted-foreground">
-                                        Leading projects from conception to completion with agile
-                                        methodologies.
+                                        Exploring the intersection of creativity and technology
+                                        through indie game development and building award-winning,
+                                        AI-powered applications.
                                     </p>
                                 </div>
                             </div>
