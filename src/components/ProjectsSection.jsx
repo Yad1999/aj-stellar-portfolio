@@ -6,7 +6,7 @@ const projects = [
         title: "HarmonAI",
         description: "A Hackathon winner AI vocal coach. Analyzes users voice and generates a detailed report on how to improve. Created with Vue, Node.js, Express, and Google Gemini API.",
         image: "/projects/Hackathon_winner.jpg",
-        tags: ["Vue", "Node.js", "Express", "Google Gemini API"],
+        tags: ["Vue", "Node.js", "Express"],
         demoUrl: "https://devpost.com/software/harmonai-8hybqu",
         githubUrl: "https://github.com/CHamilton02/harmonai-vocal-coach",
 
@@ -29,7 +29,7 @@ const projects = [
         title: "BatteriVolt",
         description: "A Full-Stack e-commerce EV dealership that helps you find the perfect electric vehicle with 24/7 AI assistance and global charging station locator.",
         image: "/projects/BatteriVolt.png",
-        tags: ["React", "Node.js", "Express", "AWS", "Google Gemini API"],
+        tags: ["React", "Node.js", "Express", "AWS"],
         demoUrl: "https://ev-dealership-final.vercel.app/",
         githubUrl: "https://github.com/Yad1999/ev-dealership-final",
     },
