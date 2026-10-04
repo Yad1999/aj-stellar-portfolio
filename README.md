@@ -78,3 +78,7 @@ The `index.css` file provides custom Tailwind utilities to enforce the "Stellar"
 - **Color Contrast Overhaul**: Switched the primary branding to a high-contrast Yellow (`#FFDB00`) for light mode, and updated typography to pure white and crisp light gray for maximum legibility against the sky.
 - **Isolated Theming**: Configured `.light-only` and `.dark-only` utility classes to flawlessly transition between the deep space dark mode and the airy sky light mode without styling overlap.
 - **Performance & Responsive Optimizations**: Upgraded the cloud background to use viewport-relative units (`vw`) for sizing and animation keyframes, ensuring consistent scaling and movement across all device sizes. Added hardware acceleration hints (`will-change`) for smooth 60fps mobile rendering and optimized cloud image loading with `loading="lazy"` and `decoding="async"`.
+
+## Next Performance Updates
+- Fix rendering issues on 2k monitor. Inspect the CloudBackground.jsx component and index.css cloud implementations for redundancy
+- Mobile cloud rendering is almost perfect. Fix the height and width of the background generation for phones with custom media queries (media queries for 2k monitors might help as well)
