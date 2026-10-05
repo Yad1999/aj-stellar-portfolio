@@ -16,8 +16,8 @@ export const AboutSection = () => {
                         </h3>
 
                         <p className="text-muted-foreground">
-                            As a creatively driven person since I was a little old child,
-                            I've always been a creatively driven person who loves combining lifelong
+                            Since I was a little old child, from creative storytelling and singing to music,
+                            I've always been a creatively driven person. As I grew older, I combined lifelong
                             storytelling with modern technology to build unique projects that solve
                             real-world problems.
                         </p>
