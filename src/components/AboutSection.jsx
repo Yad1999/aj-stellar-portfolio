@@ -25,7 +25,7 @@ export const AboutSection = () => {
                         <p className="text-muted-foreground">
                             Whether I'm engineering full-stack mobile and web applications,
                             building award-winning AI integrations and e-commerce platforms,
-                            or experimenting with indie game development in Unity, I am driven
+                            or experimenting with indie game development, I am driven
                             by work where technical problem-solving meets genuine human impact.
                         </p>
 
